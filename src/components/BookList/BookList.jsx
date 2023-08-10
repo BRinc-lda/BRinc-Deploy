@@ -16,8 +16,9 @@ function BookList() {
   const getBook = () => {
     const config = {
       headers: {
-      'Content-Type': 'application/json',
-      " Access-Control-Allow-Origin": "*"
+        accept: "application/json",
+        "Access-Control-Allow-Origin": "https://brinc-library.netlify.app/",
+        "Access-Control-Allow-Origin": "*"
     },
   }
     console.log(searchBook)
