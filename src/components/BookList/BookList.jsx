@@ -19,9 +19,8 @@ function BookList() {
       headers: {
         accept: "application/json",
     },
-    body:{
       query: searchBook
-    }
+  
   }
     axios
       .post("http://localhost:8080/search",config)
