@@ -16,8 +16,15 @@ function BookInfo() {
   // console.log(bookId);
 
   const getBookDetails = () => {
+    const config = {
+      headers: {
+        accept: "application/json",
+    },
+      query: searchBook
+  
+  }
     axios
-      .get(`https://openlibrary.org/works/${bookId}.json`)
+    .post("http://localhost:8080/book-details",config)
       .then((response) => {
         if (response.data) {
           // console.log(response.data);
