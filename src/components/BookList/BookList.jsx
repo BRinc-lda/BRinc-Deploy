@@ -23,7 +23,7 @@ function BookList() {
   }
     console.log(searchBook)
     axios
-      .get(`http://openlibrary.org/search.json?title=${searchBook}`,config)
+      .get(`https://openlibrary.org/search.json?title=${searchBook}`,config)
       .then((response) => {
         if (response.data.docs) {
           const newBooks = response.data.docs.slice(0, 4).map((singleBook) => {
