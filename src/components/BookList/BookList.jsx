@@ -14,6 +14,7 @@ function BookList() {
   };
 
   const getBook = () => {
+    console.log(searchBook)
     const config = {
       headers: {
         accept: "application/json",
