@@ -14,6 +14,7 @@ function BookList() {
   };
 
   const getBook = () => {
+    console.log(searchBook)
     axios
       .get(`http://openlibrary.org/search.json?title=${searchBook}`)
       .then((response) => {
