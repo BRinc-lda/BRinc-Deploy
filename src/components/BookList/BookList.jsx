@@ -17,13 +17,11 @@ function BookList() {
     const config = {
       headers: {
         accept: "application/json",
-        "Access-Control-Allow-Origin": "https://brinc-library.netlify.app/",
-        "Access-Control-Allow-Origin": "*"
     },
   }
     console.log(searchBook)
     axios
-      .get(`https://openlibrary.org/search.json?title=${searchBook}`,config)
+      .get(`http://openlibrary.org/search.json?title=${searchBook}`,config)
       .then((response) => {
         if (response.data.docs) {
           const newBooks = response.data.docs.slice(0, 4).map((singleBook) => {
