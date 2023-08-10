@@ -15,7 +15,6 @@ function BookList() {
 
   const getBook = () => {
     const config = {
-      mode: 'cors',
       headers: {
       'Content-Type': 'application/json',
       " Access-Control-Allow-Origin": "*"
