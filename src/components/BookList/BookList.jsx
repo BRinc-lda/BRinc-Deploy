@@ -18,10 +18,12 @@ function BookList() {
       headers: {
         accept: "application/json",
     },
+    body:{
+      query: searchBook
+    }
   }
-    console.log(searchBook)
     axios
-      .get(`http://openlibrary.org/search.json?title=${searchBook}`,config)
+      .post("http://localhost:8080/search",config)
       .then((response) => {
         if (response.data.docs) {
           const newBooks = response.data.docs.slice(0, 4).map((singleBook) => {
