@@ -1,0 +1,130 @@
+.payContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radios {
+  display: flex;
+  margin: 10px;
+}
+
+.cardNameAndNumber {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 800px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 30px;
+}
+.input:hover {
+  border: 2px solid #27ffff;
+}
+.input:focus {
+  outline: #27ffff;
+}
+
+.smallInput {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 10px;
+  border: none;
+  padding-left: 20px;
+}
+.smallerInputs {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.smallInput:focus {
+  outline: #27ffff;
+}
+
+.radios label {
+  color: white;
+}
+.visaMaster {
+  color: #27ffff;
+  background-color: #27ffff;
+  border: #27ffff;
+}
+
+#master {
+  margin-left: 10px;
+}
+#master label {
+  margin-left: 10px;
+  color: #27ffff;
+}
+
+#cardNumber:hover {
+  border: 2px solid #27ffff;
+}
+#cardNumber:focus {
+  outline: #27ffff;
+}
+
+.btnpayment {
+  margin-left: 40%;
+  margin-top: 60px;
+  margin-bottom: 170px;
+  width: 144px;
+  height: 48px;
+  border-radius: 17px;
+  background: #27ffff;
+  border: none;
+}
+.btnpayment:hover {
+  box-shadow: 0 0 50px #27ffff;
+}
+
+.master {
+  margin-left: 60px;
+}
+
+#visa {
+  margin-left: 10px;
+}
+#visa label {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .paymentText {
+    font-size: 20px;
+  }
+  .input {
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 30px;
+  }
+  .smallInput {
+    width: 90px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    padding-left: 20px;
+  }
+  .btnpayment {
+    margin-left: 30%;
+    margin-top: 60px;
+    width: 144px;
+    height: 48px;
+    border-radius: 17px;
+    background: #27ffff;
+    border: none;
+  }
+  .payContainer {
+    margin-top: 20%;
+  }
+}

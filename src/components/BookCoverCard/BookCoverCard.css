@@ -1,0 +1,43 @@
+.bookcovercontainer {
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+.bookcovercontainer:hover {
+  border: 2px solid #27ffff;
+  box-shadow: 0 0 10px #27ffff;
+}
+
+/* .books {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+} */
+
+.bookcovercontainer img {
+  height: 250px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .bookcovercontainer {
+    display: inline-block;
+    width: 28%;
+    height: 28%;
+    justify-content: center;
+    margin-left: 15%;
+    flex-direction: row;
+    border-radius: 10px;
+  }
+  .bookcovercontainer img {
+    width: 100%;
+    height: 100%;
+  }
+}

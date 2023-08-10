@@ -1,0 +1,29 @@
+.homepage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/src/assets/LibraryImg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.regbutton{
+    width: 144px;
+    height: 48px;
+    border-radius: 17px;
+    background: #27ffff;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.regbutton:hover {
+    box-shadow: 0 0 50px #27ffff;
+  }
+
+.btncontainer{
+    display:flex;
+    justify-content: center;
+}
+
+.brincLibrary{
+    text-align: center;
+    margin-bottom: 20px;
+}

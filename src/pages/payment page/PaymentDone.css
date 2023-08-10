@@ -1,0 +1,44 @@
+.paymentDoneContainer {
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.vector {
+  width: 400px;
+  height: 400px;
+}
+
+.vectContent {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+}
+.vectContent p {
+  color: #fff;
+}
+.btnVector {
+  margin-top: 60px;
+  width: 144px;
+  height: 48px;
+  border-radius: 17px;
+  background: #27ffff;
+  border: none;
+}
+
+.btnVector:hover {
+  box-shadow: 0 0 50px #27ffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .vector {
+    width: 200px;
+    height: 200px;
+  }
+  .vectContent {
+    margin-top: 100px;
+  }
+}
