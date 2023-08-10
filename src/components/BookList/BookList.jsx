@@ -14,9 +14,16 @@ function BookList() {
   };
 
   const getBook = () => {
+    const config = {
+      mode: 'cors',
+      headers: {
+      'Content-Type': 'application/json',
+      " Access-Control-Allow-Origin": "*"
+    },
+  }
     console.log(searchBook)
     axios
-      .get(`http://openlibrary.org/search.json?title=${searchBook}`)
+      .get(`http://openlibrary.org/search.json?title=${searchBook}`,config)
       .then((response) => {
         if (response.data.docs) {
           const newBooks = response.data.docs.slice(0, 4).map((singleBook) => {
